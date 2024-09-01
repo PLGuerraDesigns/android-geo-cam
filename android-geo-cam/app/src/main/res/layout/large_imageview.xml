@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+        <ImageView
+            android:id="@+id/PhotoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:background="@color/black"
+            android:alpha="0.25"/>
+
+        <TextView
+            android:id="@+id/placetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+            android:layout_toRightOf="@+id/backbutton"
+            android:layout_margin="20dp"/>
+
+
+        <Button
+            android:id="@+id/backbutton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/toolbar"
+            android:layout_alignTop="@+id/toolbar"
+            android:layout_margin="20dp"
+            android:background="@drawable/ic_arrow_back_black_24dp"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+
+        <LinearLayout
+            android:id="@+id/bottombar"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:background="@color/black"
+            android:alpha="0.25"/>
+
+        <Button
+            android:id="@+id/deletebutton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignRight="@+id/bottombar"
+            android:layout_alignTop="@+id/bottombar"
+            android:layout_margin="20dp"
+            android:background="@drawable/ic_delete_white_24dp"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+
+</RelativeLayout>
